@@ -41,3 +41,14 @@ for(var i=0; i<numberofDrumButtons; i++){
 }
 // var audio = new Audio("sounds/tom-1.mp3");
 // audio.play();
+
+function buttonAnimation(currentKey){
+           var activeButton = document.querySelector("." + currentKey);
+           activeButton.classList.add("pressed");
+           setTimeout(function(){
+            activeButton.classList.add("pressed");
+           },
+        100)
+      }
+     
+
